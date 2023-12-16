@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Details</title>
+    <link rel="stylesheet" href="Transactionn.css">
+</head>
+<body>
+    <h1><u>TRANSACTION DETAILS</u></h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Transaction_ID</th>
+                <th>Transaction_Status</th>
+                <th>Transaction_Date</th>
+                <th>Transaction_Time</th>
+                <th>Transaction_Amount</th>
+            </tr>
+        </thead>
+        <tbody id="TransactionData">
+        </tbody>
+    </table>
+    <script>
+        const TransactionData = [
+            { Transaction_ID: 202301, Transaction_Status: 'Success', Transaction_Date: '2023-03-04', Transaction_Time: '01:42:00', Transaction_Amount: 2100 },
+            { Transaction_ID: 202302, Transaction_Status: 'Failure', Transaction_Date: '2023-02-12', Transaction_Time: '21:58:00', Transaction_Amount: 4500 },
+            { Transaction_ID: 202303, Transaction_Status: 'Success', Transaction_Date: '2023-05-26', Transaction_Time: '14:19:00', Transaction_Amount: 10 },
+            { Transaction_ID: 202304, Transaction_Status: 'Failure', Transaction_Date: '2023-11-19', Transaction_Time: '18:16:00', Transaction_Amount: 280 },
+            { Transaction_ID: 202305, Transaction_Status: 'Success', Transaction_Date: '2023-09-23', Transaction_Time: '23:45:00', Transaction_Amount: 500 },
+            { Transaction_ID: 202306, Transaction_Status: 'Success', Transaction_Date: '2023-02-04', Transaction_Time: '01:53:00', Transaction_Amount: 100 }
+        ];
+        function displayTransactionDetails() {
+            const TransactionTable = document.getElementById('TransactionData');
+            TransactionData.forEach(Transaction => {
+                const row = TransactionTable.insertRow();
+                row.insertCell(0).textContent = Transaction.Transaction_ID;
+                row.insertCell(1).textContent = Transaction.Transaction_Status;
+                row.insertCell(2).textContent = Transaction.Transaction_Date;
+                row.insertCell(3).textContent = Transaction.Transaction_Time;
+                row.insertCell(4).textContent = Transaction.Transaction_Amount;
+            });
+        }
+        displayTransactionDetails();
+    </script>
+</body>
+</html>
+<br>
+<label> <a href="file:///C:/Users/prati/Desktop/Forms/transaction.html?">GO TO HOME PAGE</a></label>
+<div>
+</div>

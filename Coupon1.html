@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Details</title>
+    <link rel="stylesheet" href="Coupon1.css">
+</head>
+<body>
+    <h1><u>Coupon Details</u></h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Coupon ID</th>
+                <th>Coupon Provider</th>
+                <th>Coupon Validity</th>
+                <th>Coupon Description</th>
+            </tr>
+        </thead>
+        <tbody id="couponData">
+        </tbody>
+    </table>
+    <script>
+        const couponData = [
+            { coupon_id: 'grhjfn', coupon_provider: 'SKULL CANDY', coupon_validity: '2023-09-25 21:00:00', coupon_description: 'Get upto ₹3000 offer on all products of skullcandy'},
+            { coupon_id: 'wewqio', coupon_provider: 'JUST HERBS', coupon_validity: '2023-12-18 17:40:00', coupon_description: 'lipstick kit set of 5 and a gift card worth ₹675' },
+            { coupon_id: 'xczui', coupon_provider: 'LAKME', coupon_validity: '2024-04-15 18:00:00', coupon_description: 'Flat ₹200 off on Lakme India'},
+            { coupon_id: 'qiubsd', coupon_provider: 'BE MINIMALIST', coupon_validity: '2023-11-01 23:59:00', coupon_description: 'Flat ₹200 off on your first order from beminimalist.com' },
+            { coupon_id: 'rioeu', coupon_provider: 'ST BOTANICA', coupon_validity: '2023-09-25 21:00:00', coupon_description: 'Get a free Salicylic acid face serum worth ₹999, shipping ₹199'},
+        ];
+        function displayCouponDetails() {
+            const couponTable = document.getElementById('couponData');
+            couponData.forEach(coupon => {
+                const row = couponTable.insertRow();
+                row.insertCell(0).textContent = coupon.coupon_id;
+                row.insertCell(1).textContent = coupon.coupon_provider;
+                row.insertCell(2).textContent = coupon.coupon_validity;
+                row.insertCell(3).textContent = coupon.coupon_description;
+            });
+        }
+        displayCouponDetails();
+    </script>
+</body>
+</html>
+<BR>
+<div>
+    <label> <a href="file:///C:/Users/prati/Desktop/Forms/Coupon2.html">GO TO HOME PAGE</a></label>
+</div>

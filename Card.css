@@ -1,0 +1,22 @@
+.style{ 
+    background-color: rgba(104, 130, 151, 0.829); 
+    width: 400px; 
+    border-radius: 10px; 
+    padding: 10px 30px 40px 40px; 
+    top: 15%; 
+    left: 32%; 
+    position:absolute; 
+} 
+body{ 
+    background-image: url("Card.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+#xxx{ 
+    border-radius: 5px; 
+    color: black; 
+} 
+h2{ 
+    padding: 10px 60px; 
+}

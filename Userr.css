@@ -1,0 +1,22 @@
+.style{ 
+    background-color: rgba(249, 252, 251, 0.589); 
+    width: 450px; 
+    border-radius: 10px; 
+    padding: 10px 30px 40px 40px; 
+    top: 12%; 
+    left: 33%; 
+    position:absolute; 
+} 
+body{ 
+    background-image: url("Google\ Pay.avif"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+#xxx{ 
+    border-radius: 5px; 
+    color: black; 
+} 
+h2{
+    padding: 10px 60px; 
+}

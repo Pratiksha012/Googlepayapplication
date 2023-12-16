@@ -1,0 +1,22 @@
+.style{ 
+    background-color: rgba(129, 220, 248, 0.842); 
+    width: 400px; 
+    border-radius: 10px; 
+    padding: 10px 30px 40px 40px; 
+    top: 15%; 
+    left: 30%; 
+    position:absolute; 
+} 
+body{ 
+    background-image: url("BankAccount.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+}
+#xxx{ 
+    border-radius: 5px; 
+    color: black; 
+} 
+h2{ 
+    padding: 10px 60px;
+}

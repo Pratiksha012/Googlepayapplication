@@ -1,0 +1,22 @@
+.style{ 
+    background-color: rgba(253, 253, 253, 0.712); 
+    width: 400px; 
+    border-radius: 10px; 
+    padding: 10px 30px 40px 40px; 
+    top: 12%; 
+    left: 33%; 
+    position:absolute; 
+} 
+body{ 
+    background-image: url("Coupon.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+#xxx{ 
+    border-radius: 5px; 
+    color: black; 
+} 
+h2{
+    padding: 10px 60px; 
+}

@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+#couponSelect {
+    padding: 5px;
+    font-size: 16px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+#couponSelect option[selected] {
+    font-weight: bold;
+    color: #333;
+}
+#couponData tr.selected {
+    background-color: #ffc107;
+    color: #333;
+    font-weight: bold;
+}
